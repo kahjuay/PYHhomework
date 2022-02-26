@@ -20,13 +20,29 @@ else:
     print("Invalid Choice")
     quit()
 
-unit_of_measurement = input("Input Unit of Measurement- i.e. mm, cm, m ,km")
-if unit_of_measurement == "mm":
+initial_unit_of_measurement = input("Input Unit of Measurement- i.e. mm, cm, m ,Km")
+if initial_unit_of_measurement == "mm":
     print("millimeter")
-elif unit_of_measurement == "cm":
+elif initial_unit_of_measurement == "cm":
     print("centimeter")
-elif unit_of_measurement == "m":
+elif initial_unit_of_measurement == "m":
     print("meter")
+elif initial_unit_of_measurement == "Km":
+    print("Invalid Unit")
+else:
+    print("Invalid Input")
+
+changed_unit_of_measurement = input("Input Changed unit of measurement- i.e. mm,cm,m,Km ")
+if changed_unit_of_measurement == "mm":
+    print("millimeter")
+elif changed_unit_of_measurement == "cm":
+    print("centimeter")
+elif changed_unit_of_measurement == "m":
+    print("meter")
+elif changed_unit_of_measurement == "Km":
+    print("Kilometer")
 else:
     print("Invalid Unit")
+
+
 
