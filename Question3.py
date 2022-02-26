@@ -22,17 +22,13 @@ else:
 
 initial_unit_of_measurement = input("Input Unit of Measurement- i.e. mm, cm, m ,Km")
 if initial_unit_of_measurement == "mm":
-
-
-unit_of_measurement = input("Input Unit of Measurement- i.e. mm, cm, m ,km")
-if unit_of_measurement == "mm":
     print("millimeter")
     intUnit = 1
-elif unit_of_measurement == "cm":
+
 elif initial_unit_of_measurement == "cm":
     print("centimeter")
     intUnit = 10
-elif unit_of_measurement == "m":
+
 elif initial_unit_of_measurement == "m":
     print("meter")
     intUnit = 1000
