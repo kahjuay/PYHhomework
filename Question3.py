@@ -62,4 +62,11 @@ elif changed_unit_of_measurement == "Km":
 else:
     print("Invalid Unit")
 
-print (intQty, strUnit, intUnit, intChangeUnit)
+#print (intQty, intDim, intUnit, intChangeUnit)
+
+
+
+def CalculateOutput(intQty, intDim, intUnit, intChangeUnit):
+    print (((intQty/intChangeUnit)*intUnit)**intDim)
+
+CalculateOutput (intQty, intDim, intUnit, intChangeUnit)
