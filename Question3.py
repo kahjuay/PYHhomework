@@ -7,7 +7,7 @@ if strUnit == 'D':
 elif strUnit == "A":
     print ("Area")
 elif strUnit == "V":
-    print("Volume1")
+    print("Volume2")
 else:
     print("Invalid Choice")
     quit()
