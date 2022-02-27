@@ -1,72 +1,32 @@
-intQty = input ("Please enter an integer for Qty: ")
-strUnit = input ("Please enter D for distance, A for area or V for volume: ")
-
-
-#print(strUnit)
-
+Player1 = input("Player 1:Choose Scissors,Paper,Stone- ")
+Player2 = input("Player 2:Choose Scissors,Paper,Stone- ")
 try:
-    intQty = int(intQty)
-    print (str(intQty) + " is an Integer")
+    Player1 = str(Player1)
 except:
-    print (intQty + " is not an Integer")
+    print("Invalid String")
     quit()
-
-if strUnit == 'D':
-    intDim = 1
-    print("Distance")
-elif strUnit == "A":
-    intDim = 2
-    print ("Area")
-elif strUnit == "V":
-    intDim = 3
-    print("Volume")
+if Player1 != "Scissors" and Player1 != "Paper" and Player1 != "Stone":
+    print("Invalid Option")
 else:
-    print("Invalid Choice")
-    quit()
-
-initial_unit_of_measurement = input("Input Unit of Measurement- i.e. mm, cm, m ,Km")
-if initial_unit_of_measurement == "mm":
-    print("millimeter")
-    intUnit = 1
-
-elif initial_unit_of_measurement == "cm":
-    print("centimeter")
-    intUnit = 10
-
-elif initial_unit_of_measurement == "m":
-    print("meter")
-    intUnit = 1000
-
-elif initial_unit_of_measurement == "Km":
-    intUnit = 1000000
-    print("Kilometer")
+    pass
+if Player2 != "Scissors" and Player2 != "Paper" and Player2 != "Stone":
+    print("Invalid Option")
 else:
-    print("Invalid Input")
-
-changed_unit_of_measurement = input("Input Changed unit of measurement- i.e. mm,cm,m,Km ")
-if changed_unit_of_measurement == "mm":
-    print("millimeter")
-    intChangeUnit = 1
-
-elif changed_unit_of_measurement == "cm":
-    print("centimeter")
-    intChangeUnit = 10
-
-elif changed_unit_of_measurement == "m":
-    print("meter")
-    intChangeUnit = 1000
-
-elif changed_unit_of_measurement == "Km":
-    print("Kilometer")
-    intChangeUnit = 1000000
-else:
-    print("Invalid Unit")
-
-#print (intQty, intDim, intUnit, intChangeUnit)
-
-
-
-def CalculateOutput(intQty, intDim, intUnit, intChangeUnit):
-    print (((intQty/intChangeUnit)*intUnit)**intDim)
-
-CalculateOutput (intQty, intDim, intUnit, intChangeUnit)
+    pass
+if Player1 == Player2:
+    print("Its a Tie!")
+elif Player1 == "Stone":
+    if Player2 == "Scissors":
+        print("Player 1 Wins!")
+    else:
+        print("Player 2 Wins!")
+elif Player1 == "Paper":
+    if Player2 == "Stone":
+        print("Player 1 Wins!")
+    else:
+        print("Player 2 Wins!")
+elif Player1 == "Scissors":
+    if Player2 == "Paper":
+        print("Player 1 Wins!")
+    else:
+        print("Player 2 Wins!")
